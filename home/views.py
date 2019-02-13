@@ -40,3 +40,6 @@ def user_create(request):
     pwd = request.POST.get('pwd')
     return render(request, 'user_create.html' , {'nickname': nickname, 'pwd': pwd} )
     
+    
+
+    

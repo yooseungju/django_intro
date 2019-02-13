@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-
-{% for menu in menus %}
-<p>{{ menu }}</p>
-{{% if menu == pick %}}
-<>
-    
-    
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %} Dinner {% endblock %}
+{% block body %}
+    {% for menu in menus %}
+    <p>{{ menu }}</p>
+    {% endfor %}
+{% endblock %}
