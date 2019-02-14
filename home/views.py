@@ -48,5 +48,9 @@ def template_example(request):
     return render(request, 'template_example.html', {'my_list' :my_list, 'my_sentence':my_sentence, 'messages' : messages,
     'empty_list' : empty_list, 'datetime_now':datetime_now})
     
+    
+def static_exaple(request):
+    return render(request, "static_exaple.html")
+    
 
     
