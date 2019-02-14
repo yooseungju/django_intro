@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}TODAY{% endblock %}
+
+{% block body %}
+
+<h3>오늘 날씨</h3>
+
+{% now "Y년 m월 d일 (D) h:i" %}
+
+<h4>날씨: {{ whether}}</h4>
+<h4>온도: {{ temp }}</h4>
+
+
+{% endblock %}

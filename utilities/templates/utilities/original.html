@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} ORIGINAL {% endblock %}
+
+{% block body %}
+    <h3>영어 번역을 위한 한국어 입력받기</h3>
+    <form action="/utilities/translated/">
+        <textarea name='ko' rows="5" cols="100"></textarea> <br>
+        <input type="submit" value="번역하기"/>
+    </form>
+    
+    
+{% endblock %}
